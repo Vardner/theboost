@@ -1,0 +1,70 @@
+
+.news {
+  padding-bottom: 200px;
+  font-family: Montserrat-regular;
+
+  &__carousel {
+
+    &-item {
+      padding: 36px 30px 50px 50px;
+      background: #FFFFFF;
+      box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+      width: 550px;
+      height: 550px;
+    }
+
+    &-date {
+      padding-bottom: 30px;
+      display: block;
+    }
+
+    &-title {
+      font-weight: bold;
+      font-size: 18px;
+      color: #101010;
+      padding-bottom: 20px;
+    }
+
+    &-info {
+      max-height: 259px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-bottom: 20px;
+    }
+
+    &-link {
+      color: $link-color;
+      padding-bottom: 20px;
+      display: block;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+    &-button{
+      background: #B4B4B4;
+      width: 220px;
+      height: 48px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: normal;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: .3s;
+      border: 1px solid #B4B4B4;
+
+      &:active, &:hover {
+        background: #fff;
+        color: #B4B4B4;
+      }
+      
+      &-container {
+        display: flex;
+        justify-content: center;
+      }
+
+    }
+  }
+}

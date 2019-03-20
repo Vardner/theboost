@@ -1,0 +1,61 @@
+.categories {
+  background-color: $main-color1;
+  font-family: Montserrat-regular;
+  padding-bottom: 100px;
+
+  &__monolith {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+  }
+
+  &__brick {
+    width: 378px;
+    height: 378px;
+
+    &-inner {
+      height: 100%;
+      display: block;
+      cursor: pointer;
+      position: relative;
+    }
+
+    &-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &-title {
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      font-size: 30px;
+    }
+
+    &-icon {
+      display: block;
+      margin: 0 auto;
+      fill: $main-color3;
+    }
+  }
+
+  &__scale{
+    transition: .3s cubic-bezier(.78,.15,.6,1.75);
+
+    &:hover {
+      transform: scale(1.11);
+
+      & .categories__brick-inner {
+        background: rgba(227, 90, 24, .7)
+      }
+
+      & .categories__brick-icon {
+        fill: #fff;
+      }
+    }
+  }
+}

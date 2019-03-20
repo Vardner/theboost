@@ -1,0 +1,28 @@
+.owl-nav {
+
+  .owl-prev, .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(92, 92, 92, 0.2)!important;
+    color: #fff!important;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+
+    &:hover {
+      background: rgba(92, 92, 92, 0.5)!important;
+    }
+  }
+
+  .owl-prev {
+    left: -20px;
+  }
+
+  .owl-next {
+    right: -20px;
+  }
+}

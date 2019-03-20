@@ -1,0 +1,23 @@
+@import "base/variables";
+@import "base/zindex";
+@import "base/reset";
+@import "base/mixins";
+@import "base/fonts";
+@import "base/utilities";
+@import "base/myGrid";
+
+// Components styles
+
+@import "../components/header/header";
+@import "../components/banners/banners";
+@import "../components/projects/projects";
+@import "../components/executors/executors";
+@import "../components/categories/categories";
+@import "../components/products/products";
+@import "../components/news/news";
+
+// Non-component styles
+
+@import "section-header";
+@import "card-carousel";
+@import "owl-nav";

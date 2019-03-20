@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="images/favicon.png"/>
+	<title>The boost investment</title>
+</head>
+<body>
+	<div class="wrapper">
+		${require('./components/header/header.html')}
+		<main class="main">
+			${require('./components/banners/banners.html')}
+			${require('./components/projects/projects.html')}
+			<div class="section-separator"></div>
+			${require('./components/executors/executors.html')}
+			<div class="section-separator mb-100"></div>
+			${require('./components/categories/categories.html')}
+			<!--separator located inside categories component-->
+			${require('./components/products/products.html')}
+			<div class="section-separator"></div>
+			${require('./components/news/news.html')}
+		</main>
+		${require('./components/footer/footer.html')}
+	</div>
+</body>
+</html>
